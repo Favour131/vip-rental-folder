@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#0a0a0a;
+    color:#f5f5f5;
+    line-height:1.8;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    min-height:80vh;
+    padding:90px 0 0;
+    background:url("https://images.unsplash.com/photo-1503376780353-7e6692767b70") center/cover !important;
+    position:relative;
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.65);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:700px;
+    margin-top:120px;
+    padding:10px 20px 20px;
+}
+
+.hero-content h1{
+    color:#d4af37;
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    color:#ddd;
+}
+
+/* POLICY */
+
+.policy{
+    max-width:900px;
+    margin:70px auto;
+    padding:0 20px;
+}
+
+.policy h2{
+    color:#d4af37;
+    margin:40px 0 15px;
+}
+
+.policy p{
+    color:#ccc;
+    margin-bottom:20px;
+}
+
+.policy ul{
+    margin-left:20px;
+    color:#ccc;
+}
+
+.policy li{
+    margin-bottom:10px;
+}
+
+.last-update{
+    margin-top:50px;
+    font-style:italic;
+    color:#999;
+    border-top:1px solid #333;
+    padding-top:20px;
+}
+
+/* RESPONSIVE */
+@media (max-width:1600px) {
+    .hero{
+        height:30vh;
+    }
+}
+
+@media(max-width:768px){
+
+.hero{
+    height:100vh;
+}
+
+.hero-content h1{
+    font-size:2.2rem;
+}
+
+.policy{
+    margin:50px auto;
+}
+
+}
+@media (max-width:400px) {
+    .hero{
+        width: 130vh;
+        font-size: 30px;
+        height:150vh;
+    }
+    .hero-content{
+        margin-bottom: 50px;
+    }
+    .policy{
+        font-size: 30px;
+        justify-content: center;
+        width: 130vh;
+    }
+    .policy ul{
+        font-size: 17px;
+        width:50vh ;
+    }
+
+    footer{
+        width: 130vh;
+    }
+    .footer-column .quick-links{
+        font-size: 50px;
+    }
+}@media (max-width:600px) {
+    .hero{
+        width: 113vh;
+        font-size: 30px;
+        height:150vh;
+    }
+    .policy{
+        /* font-size: 30px; */
+        justify-content: center;
+        width: 117vh;
+    }
+    .policy ul{
+        font-size: 10x;
+        width:20vh ;
+    }
+    footer{
+        width: 117vh;
+    }
+
+}

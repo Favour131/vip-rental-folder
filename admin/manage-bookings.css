@@ -1,0 +1,428 @@
+/*========================================
+MANAGE BOOKINGS PAGE
+========================================*/
+
+
+.booking-table-container{
+
+    width:100%;
+
+    overflow-x:auto;
+
+    background:#161616;
+
+    border-radius:18px;
+
+    border:1px solid rgba(212,175,55,.15);
+
+    padding:20px;
+
+}
+
+
+
+/*========================================
+BOOKING TABLE
+========================================*/
+
+
+.booking-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    min-width:1000px;
+
+}
+
+
+
+.booking-table thead{
+
+    background:#111;
+
+}
+
+
+
+.booking-table th{
+
+    padding:18px;
+
+    text-align:left;
+
+    color:#D4AF37;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    border-bottom:1px solid rgba(212,175,55,.2);
+
+}
+
+
+
+.booking-table td{
+
+    padding:18px;
+
+    color:#ddd;
+
+    font-size:14px;
+
+    border-bottom:1px solid #242424;
+
+}
+
+
+
+.booking-table tbody tr{
+
+    transition:.3s;
+
+}
+
+
+
+.booking-table tbody tr:hover{
+
+    background:#1d1d1d;
+
+}
+
+
+
+/*========================================
+CUSTOMER DETAILS
+========================================*/
+
+
+.booking-table td strong{
+
+    color:white;
+
+    font-size:15px;
+
+}
+
+
+
+.booking-table td small{
+
+    color:#999;
+
+    font-size:12px;
+
+}
+
+
+
+/*========================================
+STATUS
+========================================*/
+
+
+.booking-table .badge{
+
+    padding:8px 15px;
+
+    border-radius:30px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    background:rgba(212,175,55,.15);
+
+    color:#D4AF37;
+
+}
+
+.booking-table .badge.approved{
+
+    background:rgba(46, 204, 113, 0.15);
+
+    color:#2ecc71;
+
+}
+
+.booking-table .badge.denied{
+
+    background:rgba(231, 76, 60, 0.15);
+
+    color:#e74c3c;
+
+}
+
+.booking-table .badge.pending-review{
+
+    background:rgba(212,175,55,.15);
+
+    color:#D4AF37;
+
+}
+
+
+
+
+/*========================================
+ACTION BUTTONS
+========================================*/
+
+
+.booking-table td:last-child{
+
+    display:flex;
+
+    gap:10px;
+
+    align-items:center;
+
+}
+
+
+
+.booking-table .modify-btn{
+
+    background:#D4AF37;
+
+    color:#111;
+
+    padding:10px 18px;
+
+    border-radius:8px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+}
+
+
+
+.booking-table .modify-btn:hover{
+
+    background:#f0c94a;
+
+}
+
+
+
+.booking-table .cancel-btn{
+
+    background:#c62828;
+
+    color:white;
+
+    padding:10px 18px;
+
+    border-radius:8px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+}
+
+
+
+.booking-table .cancel-btn:hover{
+
+    background:#e53935;
+
+}
+
+
+
+/*========================================
+EMPTY TABLE
+========================================*/
+
+
+.booking-table td[colspan="7"]{
+
+    text-align:center;
+
+    padding:60px;
+
+    color:#aaa;
+
+    font-size:16px;
+
+}
+
+
+
+/*========================================
+MOBILE RESPONSIVE
+========================================*/
+
+
+@media(max-width:768px){
+
+
+.booking-table-container{
+
+    padding:10px;
+
+}
+
+
+.booking-table{
+
+    min-width:850px;
+
+}
+
+
+}
+/* ============================
+   VIEW RECEIPT BUTTON
+============================ */
+
+
+.receipt-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:8px 15px;
+
+    min-width:120px;
+
+    border-radius:8px;
+
+    background:#d4af37;
+
+    color:#111;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    font-size:14px;
+
+    white-space:nowrap;
+
+    transition:0.3s;
+
+}
+
+
+.receipt-btn:hover{
+
+    background:#111;
+
+    color:#d4af37;
+
+}
+/* ================================
+   RECEIPT COLUMN STYLING
+================================ */
+
+
+.booking-table td:nth-child(8){
+
+    text-align:center;
+
+    vertical-align:middle;
+
+    padding:15px;
+
+}
+
+
+
+/* VIEW RECEIPT BUTTON */
+
+.receipt-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    padding:10px 18px;
+
+    min-width:130px;
+
+    background:#d4af37;
+
+    color:#111;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    border:1px solid #d4af37;
+
+    transition:all .3s ease;
+
+    white-space:nowrap;
+
+}
+
+
+
+.receipt-btn:hover{
+
+    background:transparent;
+
+    color:#d4af37;
+
+}
+
+
+
+/* NO RECEIPT TEXT */
+
+.no-receipt{
+
+    color:#888;
+
+    font-size:14px;
+
+    font-style:italic;
+
+}
+/* VIEW RECEIPT LINK */
+
+.receipt-link{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:10px 18px;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    font-size:14px;
+
+    transition:0.3s ease;
+
+    white-space:nowrap;
+
+}

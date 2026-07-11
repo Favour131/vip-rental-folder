@@ -1,0 +1,204 @@
+/* ============================
+   ADMIN PROFILE PAGE
+============================ */
+
+
+.profile-section{
+
+    padding:30px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+.profile-card{
+
+    width:100%;
+
+    max-width:600px;
+
+    background:#111;
+
+    color:white;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    text-align:center;
+
+    border:1px solid rgba(212,175,55,0.3);
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.5);
+
+}
+
+
+
+/* PROFILE ICON */
+
+.profile-icon{
+
+    width:90px;
+
+    height:90px;
+
+    margin:0 auto 20px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#d4af37;
+
+    color:#111;
+
+    font-size:40px;
+
+}
+
+
+
+.profile-card h2{
+
+    margin-bottom:5px;
+
+    color:#d4af37;
+
+    font-size:28px;
+
+}
+
+
+
+.admin-role{
+
+    color:#ccc;
+
+    margin-bottom:30px;
+
+}
+
+
+
+/* DETAILS */
+
+.profile-details{
+
+    text-align:left;
+
+    display:grid;
+
+    gap:20px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.profile-details div{
+
+    background:#1b1b1b;
+
+    padding:15px 20px;
+
+    border-radius:10px;
+
+    border-left:3px solid #d4af37;
+
+}
+
+
+
+.profile-details strong{
+
+    display:block;
+
+    margin-bottom:5px;
+
+    color:#d4af37;
+
+}
+
+
+
+.profile-details p{
+
+    margin:0;
+
+    color:#fff;
+
+}
+
+
+
+/* BUTTON */
+
+.profile-btn{
+
+    display:inline-block;
+
+    padding:12px 30px;
+
+    border-radius:10px;
+
+    background:#d4af37;
+
+    color:#111;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+
+
+.profile-btn:hover{
+
+    background:#fff;
+
+    color:#111;
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    .profile-section{
+
+        padding:20px;
+
+    }
+
+
+    .profile-card{
+
+        padding:25px;
+
+    }
+
+
+    .profile-card h2{
+
+        font-size:22px;
+
+    }
+
+}

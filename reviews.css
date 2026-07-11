@@ -1,0 +1,1095 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+
+body{
+
+    background:#0a0a0a;
+    color:white;
+    line-height:1.8;
+
+}
+
+
+html,body{
+
+    width:100%;
+    overflow-x:hidden;
+
+}
+
+
+
+/* ==============================
+            HERO
+============================== */
+
+
+.hero{
+
+    height:70vh;
+    min-height:500px;
+
+    padding:30px 20px;
+
+    background:url("https://images.unsplash.com/photo-1503376780353-7e6692767b70")
+    center/cover;
+
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+
+    text-align:center;
+
+    position:relative;
+
+}
+
+
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.65);
+
+}
+
+
+
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:700px;
+
+    padding:20px;
+
+}
+
+
+
+.hero h1{
+
+    font-size:3rem;
+
+    color:#d4af37;
+
+    margin-bottom:15px;
+
+}
+
+
+
+
+
+/* ==============================
+        RATING SUMMARY
+============================== */
+
+
+.rating-summary{
+
+    padding:80px 8%;
+
+    display:grid;
+
+    grid-template-columns:1fr 2fr;
+
+    gap:40px;
+
+    align-items:center;
+
+}
+
+
+
+.overall-rating{
+
+    text-align:center;
+
+}
+
+
+
+.overall-rating h2{
+
+    font-size:4rem;
+
+    color:#d4af37;
+
+}
+
+
+
+
+.stars{
+
+    color:#FFD700;
+
+    margin:15px 0;
+
+}
+
+
+
+
+
+.bar{
+
+    display:flex;
+
+    align-items:center;
+
+    margin-bottom:15px;
+
+    gap:15px;
+
+}
+
+
+
+.progress{
+
+    width:100%;
+
+    height:10px;
+
+    background:#222;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+
+
+.progress div{
+
+    height:100%;
+
+    background:#d4af37;
+
+}
+
+
+
+
+
+/* ==============================
+        REVIEW GRID
+============================== */
+
+
+.reviews-grid{
+
+    padding:0 8% 80px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+
+
+/* ==============================
+        REVIEW CARD
+============================== */
+
+
+.review-card{
+
+
+    background:black;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    position:relative;
+
+    border:1px solid rgba(255,255,255,0.05);
+
+    box-shadow:0 15px 40px rgba(0,0,0,0.2);
+
+    transition:.3s ease;
+
+}
+
+
+
+.review-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,0.4);
+
+}
+
+
+
+
+.review-card img{
+
+    width:80px;
+
+    height:80px;
+
+    border-radius:50%;
+
+    margin-bottom:15px;
+
+}
+
+
+
+
+
+.reviewer-name{
+
+    font-size:18px;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+    color:#d4af37;
+
+}
+
+
+
+
+
+.review-card h3{
+
+    font-size:20px;
+
+    margin-bottom:12px;
+
+    font-weight:700;
+
+}
+
+
+
+
+
+.review-card .stars{
+
+    margin-bottom:20px;
+
+}
+
+
+
+.review-card .stars i{
+
+    color:#d4af37;
+
+    font-size:18px;
+
+    margin-right:4px;
+
+}
+
+
+
+
+
+.review-card > p{
+
+    font-size:15px;
+
+    line-height:1.8;
+
+    color:#bbb;
+
+    font-style:italic;
+
+    position:relative;
+
+    padding-left:18px;
+
+}
+
+
+
+
+
+.review-card > p::before{
+
+
+    content:"“";
+
+    font-size:45px;
+
+    color:#d4af37;
+
+    position:absolute;
+
+    left:-5px;
+
+    top:-15px;
+
+}
+
+
+
+
+
+/* ==============================
+        ADMIN RESPONSE
+============================== */
+
+
+.admin-reply{
+
+
+    margin-top:25px;
+
+    padding:20px;
+
+    background:#111;
+
+    color:white;
+
+    border-radius:15px;
+
+    border-left:5px solid #d4af37;
+
+
+}
+
+
+
+
+.admin-reply strong{
+
+
+    display:block;
+
+    color:#d4af37;
+
+    font-size:14px;
+
+    margin-bottom:10px;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+
+}
+
+
+
+
+.admin-reply p{
+
+
+    margin:0;
+
+    color:#f5f5f5;
+
+    line-height:1.7;
+
+    font-size:14px;
+
+
+}
+
+
+
+
+/* ==============================
+        REVIEW FORM
+============================== */
+
+
+.review-form{
+
+    padding:80px 8%;
+
+    background:#111;
+
+}
+
+
+
+.review-form h2{
+
+
+    text-align:center;
+
+    color:#d4af37;
+
+    margin-bottom:30px;
+
+
+}
+
+
+
+
+.review-form form{
+
+
+    max-width:700px;
+
+    margin:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+
+}
+
+
+
+
+.review-form input,
+.review-form select,
+.review-form textarea{
+
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#1b1b1b;
+
+    color:white;
+
+
+}
+
+
+
+
+
+.review-form button{
+
+
+    padding:15px;
+
+    border:none;
+
+    background:#d4af37;
+
+    color:black;
+
+    font-weight:bold;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+
+}
+
+
+
+#successMessage{
+
+
+    display:none;
+
+    text-align:center;
+
+    margin-top:20px;
+
+    color:#d4af37;
+
+
+}
+/* ==============================
+        REVIEW MODAL
+============================== */
+
+
+.review-modal{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.7);
+
+    display:none;
+
+    align-items:center;
+
+    justify-content:center;
+
+    z-index:9999;
+
+}
+
+
+
+.review-modal-box{
+
+
+    background:#111;
+
+    color:white;
+
+    padding:40px;
+
+    width:350px;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 40px rgba(0,0,0,0.5);
+
+
+}
+
+
+
+
+
+.review-modal-box i{
+
+
+    font-size:50px;
+
+    color:#d4af37;
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+.review-modal-box button{
+
+
+    margin-top:20px;
+
+    padding:12px 30px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    background:#d4af37;
+
+    color:black;
+
+    font-weight:bold;
+
+
+}
+
+
+
+
+
+/* ==============================
+        TABLET
+        MAX WIDTH 768px
+============================== */
+@media(max-width:1300px){
+
+.review-card{
+
+    padding:22px;
+
+}
+
+
+.review-card h3{
+
+    font-size:18px;
+
+}
+
+
+.hero-content{
+    padding:20px;
+}
+
+
+.hero h1{
+    font-size:2.2rem;
+    color: blue;
+    padding-top: 35vh;
+}
+
+}
+
+@media (max-width:1600px) {
+    .hero-content{
+        color: aqua;
+        padding-bottom: 17vh;
+    }
+}
+
+
+@media(max-width:768px){
+
+
+
+    .hero{
+
+        height:30vh;
+
+        min-height:330px;
+
+        padding:100px 20px 40px;
+
+    }
+
+
+
+    .hero-content{
+
+        width:100%;
+
+        padding:20px;
+
+    }
+
+
+
+    .hero h1{
+
+        font-size:2.2rem;
+
+    }
+
+
+
+    .rating-summary{
+
+
+        grid-template-columns:1fr;
+
+        padding:60px 5%;
+
+        gap:30px;
+
+
+    }
+
+
+
+    .overall-rating h2{
+
+        font-size:3.5rem;
+
+    }
+
+
+
+    .reviews-grid{
+
+        padding:0 5% 60px;
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+    .review-form{
+
+        padding:60px 5%;
+
+    }
+
+
+
+}
+
+
+
+
+
+
+/* ==============================
+        SMALL TABLETS
+        MAX WIDTH 600px
+============================== */
+
+
+@media(max-width:600px){
+
+
+
+    .hero{
+
+
+        height:50vh;
+
+        min-height:450px;
+
+        padding:90px 20px 30px;
+
+
+    }
+
+
+
+
+    .hero h1{
+
+
+        font-size:2rem;
+
+
+    }
+
+
+
+
+
+    .hero-content{
+
+
+        padding:10px;
+
+
+    }
+
+
+
+
+
+    .rating-summary{
+
+
+        padding:40px 20px;
+
+
+    }
+
+
+
+
+    .bar{
+
+
+        gap:8px;
+
+        font-size:14px;
+
+
+    }
+
+
+
+
+
+    .review-card{
+
+
+        padding:22px;
+
+
+    }
+
+
+
+
+    .review-card h3{
+
+
+        font-size:18px;
+
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+/* ==============================
+        MOBILE
+        MAX WIDTH 500px
+============================== */
+
+
+@media(max-width:500px){
+
+
+
+    .hero{
+
+
+        height:55vh;
+
+        min-height:430px;
+
+        padding:90px 15px 30px;
+
+
+    }
+
+
+
+
+    .hero-content{
+
+
+        width:100%;
+
+        padding:10px;
+
+
+    }
+
+
+
+
+    .hero h1{
+
+
+        font-size:1.7rem;
+
+
+    }
+
+
+
+
+
+    .rating-summary{
+
+
+        padding:35px 15px;
+
+        gap:20px;
+
+
+    }
+
+
+
+
+
+    .overall-rating h2{
+
+
+        font-size:2.8rem;
+
+
+    }
+
+
+
+
+    .reviews-grid{
+
+
+        padding:0 15px 50px;
+
+
+        gap:20px;
+
+
+    }
+
+
+
+
+
+    .review-card{
+
+
+        padding:20px;
+
+
+    }
+
+
+
+
+    .review-card > p{
+
+
+        font-size:14px;
+
+
+    }
+
+
+
+
+
+    .review-form{
+
+
+        padding:40px 15px;
+
+
+    }
+
+
+
+
+
+    .review-form input,
+    .review-form select,
+    .review-form textarea{
+
+
+        font-size:14px;
+
+        padding:12px;
+
+
+    }
+
+
+
+
+
+    .review-modal-box{
+
+
+        width:90%;
+
+        padding:25px;
+
+
+    }
+
+
+
+
+
+    .review-modal-box i{
+
+
+        font-size:40px;
+
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+/* ==============================
+        VERY SMALL PHONES
+        MAX WIDTH 360px
+============================== */
+
+
+@media(max-width:360px){
+
+
+
+    .hero{
+
+
+        padding:80px 10px 25px;
+
+
+    }
+
+
+
+
+    .hero h1{
+
+
+        font-size:1.5rem;
+
+
+    }
+
+
+
+
+    .hero-content p{
+
+
+        font-size:.85rem;
+
+
+    }
+
+
+
+
+    .overall-rating h2{
+
+
+        font-size:2.3rem;
+
+
+    }
+
+
+
+
+    .review-card{
+
+
+        padding:15px;
+
+
+    }
+
+
+
+
+    .review-card h3{
+
+
+        font-size:16px;
+
+
+    }
+
+
+}
