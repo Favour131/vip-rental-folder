@@ -159,8 +159,8 @@
     .hero{
         width: 100%;
         font-size: 15px;
-        height:100vh;
         padding-top: 30px;
+        height: 60vh !important;
     }
     .hero-content{
         margin-bottom: 50px;

@@ -234,7 +234,7 @@ font-size:1.2rem;
 
 @media(max-width:376px){
 .services-hero{
-    min-height:90vh;
+    height: 60vh !important;
     padding:70px 0;
 }
 

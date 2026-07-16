@@ -241,7 +241,7 @@ font-size:2rem;
         padding-top:20px;
     }
     .contact-hero{
-        height: 100vh;
+        height: 60vh !important;
     }
 }
 

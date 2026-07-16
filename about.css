@@ -248,6 +248,6 @@ font-size:2rem;
         padding-top: 70px;
     }
     .about-hero{
-        height: 100vh;
+        height: 60vh !important;
     }
 }
