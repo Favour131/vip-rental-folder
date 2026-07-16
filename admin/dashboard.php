@@ -398,6 +398,26 @@ Manage every aspect of your VIP Rental transport system from one dashboard.
 
         </a>
 
+        <a href="manage-reviews.php" class="action-card">
+
+            <i class="fa-solid fa-star"></i>
+
+            <h3>Reviews</h3>
+
+            <p>View,cancel and reply users review</p>
+
+        </a>
+         <a href="profile.php" class="action-card">
+
+            <i class="fa-solid fa-user"></i>
+
+            <h3>Profile</h3>
+
+            <p>View,and edit your Profile</p>
+
+        </a>
+         
+
         <a href="manage-bookings.php" class="action-card">
 
             <i class="fa-solid fa-calendar-check"></i>
@@ -415,6 +435,16 @@ Manage every aspect of your VIP Rental transport system from one dashboard.
             <h3>Vehicles</h3>
 
             <p>Add, edit and manage vehicles.</p>
+
+        </a>
+
+        <a href="logout.php" class="action-card">
+
+            <i class="fa-solid fa-completed"></i>
+
+            <h3>Logout</h3>
+
+            <p>Admin logout</p>
 
         </a>
 

@@ -144,7 +144,7 @@ Administrator
 
 <strong>Email</strong>
 
-<p>
+<p class ="admin_email">
 <?php echo htmlspecialchars($admin["email"]); ?>
 </p>
 
@@ -168,7 +168,7 @@ Administrator
 </div>
 
 
-
+<div class="profile-actions">
 <a href="edit-profile.php" class="profile-btn">
 
 Edit Profile
@@ -180,7 +180,7 @@ Edit Profile
 Change Password
 
 </a>
-
+</div>
 
 
 </div>

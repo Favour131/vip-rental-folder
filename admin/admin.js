@@ -62,33 +62,33 @@ if(sidebarMenu){
 // MOBILE SIDEBAR
 // ================================
 
-if(menuToggle){
+// if(menuToggle){
 
-    menuToggle.addEventListener("click",()=>{
+//     menuToggle.addEventListener("click",()=>{
 
-        sidebar.classList.toggle("active");
+//         sidebar.classList.toggle("active");
 
-        overlay.classList.toggle("active");
+//         overlay.classList.toggle("active");
 
-    });
+//     });
 
-}
+// }
 
 // ================================
 // CLOSE SIDEBAR
 // ================================
 
-if(overlay){
+// if(overlay){
 
-    overlay.addEventListener("click",()=>{
+//     overlay.addEventListener("click",()=>{
 
-        sidebar.classList.remove("active");
+//         sidebar.classList.remove("active");
 
-        overlay.classList.remove("active");
+//         overlay.classList.remove("active");
 
-    });
+//     });
 
-}
+// }
 
 // ================================
 // CLOSE SIDEBAR AFTER CLICKING LINK

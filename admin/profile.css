@@ -202,3 +202,78 @@
     }
 
 }
+
+   @media(max-width:375px){
+
+    .profile-section{
+
+        padding:15px;
+
+    }
+
+
+    .profile-card{
+
+        padding:20px;
+
+    }
+
+
+    .profile-details div{
+
+        width:100%;
+        height:auto;
+
+        padding:15px;
+
+    }
+
+
+    .profile-details p{
+
+        font-size:14px;
+
+        overflow-wrap:break-word;
+
+        word-break:break-word;
+
+    }
+
+
+    .admin_email{
+
+        max-width:100%;
+
+        overflow-wrap:anywhere;
+
+    }
+
+    .profile-actions{
+
+        display:flex;
+
+        justify-content:center;
+
+        gap:8px;
+
+    }
+
+
+    .profile-actions .profile-btn{
+
+        padding:10px 8px;
+
+        min-width:0;
+
+        width:50%;
+
+        font-size:12px;
+
+        text-align:center;
+
+    }
+
+}
+
+
+    

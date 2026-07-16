@@ -5,16 +5,22 @@
     font-family:Arial,sans-serif;
 }
 
-body{
+/* body{
     background:#0a0a0a;
     color:#f5f5f5;
     line-height:1.8;
+} */
+ body{
+    background:#0a0a0a;
+    color:#f5f5f5;
+    line-height:1.8;
+    overflow-x:hidden;
 }
 
 /* HERO */
 
 .hero{
-    height:100vh;
+    height:70vh;
     min-height:80vh;
     padding:90px 0 0;
     background:url("https://images.unsplash.com/photo-1503376780353-7e6692767b70") center/cover !important;
@@ -35,7 +41,7 @@ body{
     position:relative;
     z-index:2;
     max-width:700px;
-    margin-top:120px;
+    margin-top:80px;
     padding:10px 20px 20px;
 }
 
@@ -52,7 +58,7 @@ body{
 /* POLICY */
 
 .policy{
-    max-width:900px;
+    max-width:800px;
     margin:70px auto;
     padding:0 20px;
 }
@@ -83,13 +89,56 @@ body{
     border-top:1px solid #333;
     padding-top:20px;
 }
+/* SMALL LAPTOP / TABLET LANDSCAPE */
+@media(max-width:1400px){
+
+    .hero{
+        padding-top:70px;
+    }
+
+
+    .hero-content{
+
+        margin-top:170px;
+
+    }
+
+}
 
 /* RESPONSIVE */
-@media (max-width:1600px) {
+@media (max-width:1281px) {
     .hero{
-        height:30vh;
+        height:70vh;
+        padding-top: 120px;
+
     }
 }
+    
+@media(max-width:1024px){
+
+    .hero{
+
+        padding-top:60px;
+
+    }
+
+
+    .hero-content{
+
+        margin-top:70px;
+        padding:10px 20px;
+
+    }
+
+
+    .hero-content h1{
+
+        font-size:2.5rem;
+
+    }
+
+}
+
 
 @media(max-width:768px){
 
@@ -108,46 +157,47 @@ body{
 }
 @media (max-width:400px) {
     .hero{
-        width: 130vh;
-        font-size: 30px;
-        height:150vh;
+        width: 100%;
+        font-size: 15px;
+        height:100vh;
+        padding-top: 30px;
     }
     .hero-content{
         margin-bottom: 50px;
     }
-    .policy{
-        font-size: 30px;
-        justify-content: center;
-        width: 130vh;
+    .hero-content h1{
+        font-size: 1.8rem;
     }
+    .hero-content p{
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+    .policy{
+        font-size: 15px;
+        justify-content: center;
+        width: 100%;
+        /* padding: 0 15px; */
+        max-width: 100%;
+    }
+
     .policy ul{
-        font-size: 17px;
-        width:50vh ;
+        font-size: 15px;
+        padding-left: 18px;
+        /* width:10% ; */
     }
 
     footer{
-        width: 130vh;
+        width: 100%;
     }
     .footer-column .quick-links{
         font-size: 50px;
     }
-}@media (max-width:600px) {
-    .hero{
-        width: 113vh;
-        font-size: 30px;
-        height:150vh;
+    .privacy_container{
+        width: 100%;
     }
-    .policy{
-        /* font-size: 30px; */
-        justify-content: center;
-        width: 117vh;
-    }
-    .policy ul{
-        font-size: 10x;
-        width:20vh ;
-    }
-    footer{
-        width: 117vh;
-    }
-
+}
+html, body{
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
 }

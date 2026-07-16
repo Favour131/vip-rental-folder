@@ -182,29 +182,6 @@ ADMIN LOGIN PAGE
 }
 
 
-
-/* MOBILE */
-
-@media(max-width:500px){
-
-
-.admin-login-box{
-
-    width:90%;
-
-    padding:30px;
-
-}
-
-
-.admin-login-box h1{
-
-    font-size:26px;
-
-}
-
-
-}
 /* ================================
    DASHBOARD RECENT BOOKINGS TABLE
 ================================ */
@@ -522,5 +499,201 @@ ADMIN LOGIN PAGE
     color:#ccc;
 
     padding:30px;
+
+}
+/*==================================
+ADMIN LOGIN RESPONSIVE
+==================================*/
+
+
+/* LAPTOPS */
+@media (max-width:1440px) {
+    .admin-login-box{
+
+        width:300px;
+        max-width:70%;
+
+    }
+    .input-group input{
+        width: 90%;
+    }
+}
+@media(max-width:1280px){
+
+    .admin-login-box{
+
+        width:300px;
+        max-width:70%;
+
+    }
+    .input-group input{
+        width: 90%;
+    }
+
+}
+
+
+
+/* TABLETS */
+@media(max-width:992px){
+
+    .admin-login-container{
+
+        width:100%;
+        padding:30px;
+
+    }
+
+
+    .admin-login-box{
+
+        width:400px;
+        max-width:100%;
+        padding:35px;
+
+    }
+
+
+    .admin-login-box h1{
+
+        font-size:28px;
+
+    }
+    .input-group input{
+        width: 90%;
+    }
+
+}
+
+
+
+/* MOBILE */
+@media(max-width:768px){
+
+    .admin-login-container{
+
+        min-height:100vh;
+        padding:20px;
+
+    }
+
+
+    .admin-login-box{
+
+        width:100%;
+        max-width:380px;
+        padding:30px 25px;
+
+    }
+
+
+    .admin-login-box h1{
+
+        font-size:25px;
+
+    }
+
+
+    .input-group input{
+
+        width:90%;
+        height:45px;
+
+    }
+
+
+    button{
+
+        width:100%;
+        height:45px;
+
+    }
+
+}
+
+
+
+/* SMALL PHONES */
+@media(max-width:500px){
+
+    .admin-login-container{
+
+        padding:15px;
+
+    }
+
+
+    .admin-login-box{
+
+        padding:25px 18px;
+        border-radius:15px;
+
+    }
+
+
+    .admin-login-box h1{
+
+        font-size:22px;
+
+    }
+
+
+    .input-group label{
+
+        font-size:14px;
+
+    }
+
+
+    .input-group input{
+
+        font-size:14px;
+        padding:12px;
+        width: 95%;
+
+    }
+
+
+    button{
+
+        font-size:14px;
+
+    }
+
+}
+
+
+
+/* VERY SMALL PHONES */
+@media(max-width:360px){
+
+    .admin-login-box{
+
+        padding:20px 15px;
+
+    }
+
+
+    .admin-login-box h1{
+
+        font-size:20px;
+
+    }
+
+
+    .input-group input{
+
+        height:42px;
+        width:90%;
+        /* background-color: rebeccapurple; */
+
+    }
+
+
+    button{
+
+        height:42px;
+
+    }
 
 }
