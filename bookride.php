@@ -393,6 +393,7 @@ value="<?php echo $vehicle["id"]; ?>">
                     </div>
 
                 </div>
+                <p>If there is a delay in your bookings approval, kindly place a call or send us a direct email. Thank You.</p>
 
 
                 <button
