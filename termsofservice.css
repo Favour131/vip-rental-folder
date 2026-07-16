@@ -18,8 +18,8 @@ body{
 /* HERO */
 
 .hero{
-    height:80vh;
-    min-height:80vh;
+    height:70vh;
+    /* min-height:80vh; */
     padding:30px 0 0;
     background:url("https://images.unsplash.com/photo-1503376780353-7e6692767b70") center/cover !important;
     position:relative;
